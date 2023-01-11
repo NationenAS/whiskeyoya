@@ -1,0 +1,42 @@
+/* Variables */
+:root {
+	--text-black: #000;
+	--green: #4d6711;
+	--light-green: #627B2F;
+	--red: #d1002d;
+	--sand: #edebdd;
+	--brown: #B2AD7F;
+}
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+	cursor: default;
+	line-height: 1.4;
+	-moz-tab-size: 4;
+	tab-size: 4;
+	-webkit-tap-highlight-color: transparent;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	word-break: break-word;
+  }
+b,
+strong {
+  font-weight: bolder;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* Global */

@@ -1,0 +1,58 @@
+/* Wipe */
+.wipe {
+    background: none;
+}
+.wipe__element {
+    min-height: 100vh;
+    position: relative;
+}
+.wipe__media {
+    height: 100vh;
+    width: 100%;
+}
+.wipe__element--back .wipe__media {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    will-change: opacity;
+    /* transition: opacity .5s; */
+}
+.wipe img,
+.story img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.wipe__content {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-sec);
+    opacity: 0;
+    color: white;
+    transition: .5s ease-out;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+}
+.wipe__element--back .wipe__content {
+    bottom: 150px;
+    position: absolute;
+}
+
+/* Whsiky variant */
+.story__text--whisky .story__wave {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+.story__text--whisky path {
+    fill: #bf7a14;
+}
+.story__text--whisky > div > div {
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #bf7a14;
+}
