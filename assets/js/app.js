@@ -1,17 +1,17 @@
 /* Mapbox init */
-const start = [12.477378845214844, 66.76016258859444];
+const natlabStart = [12.477378845214844, 66.76016258859444];
 mapboxgl.accessToken = 'pk.eyJ1IjoiamFyYW5kIiwiYSI6ImNrZnBhMDBuMjBzajEycm9laGFzenN2MjcifQ.5QyfTBxmSzxDGAyZ_kTusA';
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/jarand/ckybjbmcg0t8q14mjjvipvoj8',
-    center: start,          
+    center: natlabStart,          
     zoom: 3,
     interactive: false
 });
 
 /* Zoom in on viewport intersection */
-let m = document.querySelector('#map');
-let mapObserver = new IntersectionObserver((entries, observer) => {
+let natlabm = document.querySelector('#map');
+let natlabMapObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             map.easeTo({
@@ -40,10 +40,10 @@ let mapObserver = new IntersectionObserver((entries, observer) => {
     }, { 
     threshold: 0.8
 });
-mapObserver.observe(m);
+natlabMapObserver.observe(natlabm);
 
 /* Videos start/stop */
-let videos = document.querySelectorAll('video.intersect');
+let natlabvideos = document.querySelectorAll('video.intersect');
 let observeVideo = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (!entry.isIntersecting && !entry.target.paused) {
@@ -55,7 +55,7 @@ let observeVideo = new IntersectionObserver((entries, observer) => {
 }, {
     threshold: 0.3
 });
-videos.forEach(el => {
+natlabvideos.forEach(el => {
     observeVideo.observe(el);   
 });
 
@@ -79,7 +79,7 @@ natStories.forEach(s => {
 });
 
 // Observe
-var elementObserver = new IntersectionObserver((entries) => {
+var natlabelementObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         let t = entry.target;
         if (entry.isIntersecting) {
@@ -103,6 +103,6 @@ var elementObserver = new IntersectionObserver((entries) => {
 });
 var storyElement = document.querySelectorAll('.story__trigger');
 storyElement.forEach((e) => {
-    elementObserver.observe(e);
+    natlabelementObserver.observe(e);
 });
 /* End Nat Story */
