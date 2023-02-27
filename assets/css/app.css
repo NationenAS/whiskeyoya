@@ -1,50 +1,31 @@
 /* Variables */
 :root {
-    --blue: #1f3767;
-    --black: #141414;
-    --my: 2rem;
-    --col: 680px;
-    --col-l: 1080px;
-    --font-pri: 'PT Serif', serif;
-    --font-sec: tiempos, serif;
-    --font-ter: adelle, sans-serif;
+    --nat-blue: #1f3767;
+    --nat-black: #141414;
+    --nat-my: 2rem;
+    --nat-col: 680px;
+    --nat-col-l: 1080px;
+    --nat-font-pri: 'PT Serif', serif;
+    --nat-font-sec: tiempos, serif;
+    --nat-font-ter: adelle, sans-serif;
 }
 
-/* Global */
-* {
-	margin: 0;
-	padding: 0;
-}
-*,
-::before,
-::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-html {
-	scroll-behavior: smooth;
+
+/* Special links */
+.natlab {
+    font-family: var(--nat-font-pri);
+    font-size: 18px;
+    scroll-behavior: smooth;
     cursor: default;
 	line-height: 1.4;
 	word-break: break-word;
-    overflow-x: hidden;
-    font-family: var(--font-pri);
-    font-size: 18px;
 }
-html, 
-body {
-    height: 100%;
-}
-video {
-    max-width: 100%;
-}
-
-/* Special links */
-a {
+.natlab a {
     position: relative;
     text-decoration: none;
     color: inherit;
 }
-a:before {
+.natlab a:before {
     content: "";
     position: absolute;
     display: block;
@@ -52,19 +33,19 @@ a:before {
     bottom: 1px;
     height: 2px;
     width: 100%;
-    background-color: var(--blue);
+    background-color: var(--nat-blue);
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
 }
-a:hover:before {
+.natlab a:hover:before {
     width: 0;
 }
-a.nodec::before {
+.natlab a.nodec::before {
     display: none;
 }
 
 /* Top nav */
-.nav {
+.natlab.nav {
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -76,55 +57,55 @@ a.nodec::before {
     justify-content: space-between;
     padding: .8rem;
 }
-.nav__back a {
+.natlab.nav__back a {
     color: white;
     line-height: 1;
 }
-.nav__back svg {
+.natlab.nav__back svg {
     width: 38px;
 }
-.nav__back svg > * {
+.natlab.nav__back svg > * {
     fill: none;
     stroke: white;
     stroke-width: 2px;
 }
-.nav a::before {
+.natlab.nav a::before {
     display: none;
 }
-.nav__logo svg {
+.natlab.nav__logo svg {
     width: 28px;
 }
 
 /* Structure */
-.section {
+.natlab .section {
     background: white;
 }
-.col {
-    margin: var(--my) auto;
+.natlab .col {
+    margin: var(--nat-my) auto;
     padding: 1px 1rem;
-    width: var(--col);
+    width: var(--nat-col);
     max-width: 100%;
 }
-.col--l {
-    width: var(--col-l);
+.natlab .col--l {
+    width: var(--nat-col-l);
     padding: 1px 0;
 }
-.col--full {
+.natlab .col--full {
     width: 100%;
     padding: 1px 0;
 }
-.col--split {
+.natlab .col--split {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
-.col--split > div {
+.natlab .col--split > div {
     width: calc(50% - 1rem);
 }
 
 /* Story */
-.story {
+.natlab .story {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -132,7 +113,7 @@ a.nodec::before {
     flex-direction: column;
     margin-top: 100vh;
 }
-.story__background {
+.natlab .story__background {
     background: #f7f7ff;
     position: -webkit-sticky;
     position: sticky;
@@ -147,30 +128,30 @@ a.nodec::before {
     -webkit-box-ordinal-group: 0;
     order: -1;
 }
-.story__background[data-story-state="next"],
-.story__background[data-story-state="active"],
-.story__background[data-story-state="prev"] {
+.natlab .story__background[data-story-state="next"],
+.natlab .story__background[data-story-state="active"],
+.natlab .story__background[data-story-state="prev"] {
     visibility: visible;
 }
-.story__background[data-story-state="active"],
-.story__background[data-story-state="prev"] {
+.natlab .story__background[data-story-state="active"],
+.natlab .story__background[data-story-state="prev"] {
     opacity: 1;
 }
-.story__background[data-story-state="next"],
-.story__background[data-story-state="active"] {
+.natlab .story__background[data-story-state="next"],
+.natlab .story__background[data-story-state="active"] {
     will-change: opacity;
 }
-.story__background video,
-.story__background img {
+.natlab .story__background video,
+.natlab .story__background img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center center;
 }
-.story__background video {
+.natlab .story__background video {
     object-fit: cover;
 }
-.story__trigger {
+.natlab .story__trigger {
     z-index: 100;
     opacity: .5;
     -webkit-transition: .5s;
@@ -179,23 +160,23 @@ a.nodec::before {
     max-width: 600px;
     margin: 0 auto;
 }
-.story__trigger:nth-child(2) {
+.natlab .story__trigger:nth-child(2) {
     margin-top: -50vh;
 }
-.story__trigger:last-of-type {
+.natlab .story__trigger:last-of-type {
     padding-bottom: 100vh;
 }
-.story__trigger[data-story-state="active"] {
+.natlab .story__trigger[data-story-state="active"] {
     opacity: 1;
 }
-.story__trigger > div {
+.natlab .story__trigger > div {
     padding: 1rem;
     color: white;
-    font-family: var(--font-ter);
+    font-family: var(--nat-font-ter);
     text-align: center;
 }
-.story__trigger > div > div {
-    background: var(--black);
+.natlab .story__trigger > div > div {
+    background: var(--nat-black);
     padding: 1.5rem 2rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -206,109 +187,109 @@ a.nodec::before {
 }
 
 /* Content */
-.meta {
-    font: .85rem var(--font-ter);
+.natlab .meta {
+    font: .85rem var(--nat-font-ter);
     margin: 3rem 0;
     text-align: center;
     width: 100%;
 }
-.meta__byline {
+.natlab .meta__byline {
     margin-bottom: 1.5rem;
 }
-.meta__author {
+.natlab .meta__author {
     margin-bottom: .2rem;
 }
-.leadin {
+.natlab .leadin {
     margin-bottom: 2rem;
-    font: 1.55rem/1.4 var(--font-sec);
+    font: 1.55rem/1.4 var(--nat-font-sec);
     text-align: center;
     font-weight: 100;
 }
-p {
+.natlab p {
     font-size: 1.1rem;
     line-height: 1.5;
     color: #333;
     margin: 1rem 0;
 }
-h2 {
-    font-family: var(--font-ter);
+.natlab h2 {
+    font-family: var(--nat-font-ter);
     font-size: 1.1rem;
     margin-top: 2rem;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
-.break {
+.natlab .break {
     margin: 4rem auto;
     width: 33%;
 }
-.break path {
+.natlab .break path {
     fill: none;
-    stroke: var(--blue);
+    stroke: var(--nat-blue);
     stroke-width: 2px;
 }
-figure {
-    margin: var(--my) auto;
+.natlab figure {
+    margin: var(--nat-my) auto;
 }
-article img {
+article.natlab img {
     width: 100%;
     display: block;
 }
-figcaption {
+.natlab figcaption {
     margin-top: .4rem;
-    font: .85rem var(--font-ter);
+    font: .85rem var(--nat-font-ter);
 }
-.portrait {
+.natlab .portrait {
     position: relative;
     width: 100%;
     margin: 4rem 0;
 }
-.portrait__sticky {
+.natlab .portrait__sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 5rem;
     float: right;
 }
-.portrait__profile {
+.natlab .portrait__profile {
     padding: 0 2rem;
     width: 300px;
     background: white;
-    font-family: var(--font-ter);
+    font-family: var(--nat-font-ter);
     margin-right: -120px;
 }
-.portrait__wave {
+.natlab .portrait__wave {
     width: 32px;
     margin-bottom: 1rem;
 }
-.portrait__wave path {
+.natlab .portrait__wave path {
     fill: none;
-    stroke: var(--blue);
+    stroke: var(--nat-blue);
     stroke-width: 2px;
 }
-.portrait__name {
+.natlab .portrait__name {
     font-size: .9rem;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: .5rem;
 }
-.portrait__info {
+.natlab .portrait__info {
     font-size: .9rem;
 }
-.portrait__info div {
+.natlab .portrait__info div {
     margin-bottom: .3rem;
 }
-.portrait__video {
+.natlab .portrait__video {
     width: 440px;
 }
 
 /* Footer */
-footer {
+.natlab footer {
     padding: 3rem 1rem;
     background: rgb(29, 29, 29);
     color: white;
     font-size: .9rem;
-    font-family: var(--font-ter);
+    font-family: var(--nat-font-ter);
 }
-.footer__logo {
+.natlab .footer__logo {
     min-width: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -318,29 +299,29 @@ footer {
     -webkit-box-align: center;
     align-items: center;
 }
-.footer__logo img {
+.natlab .footer__logo img {
     width: 200px;
 }
-.footer__meta > div {
+.natlab .footer__meta > div {
     margin-bottom: 1rem;
 }
-.footer__meta img {
+.natlab .footer__meta img {
     display: inline-block;
     width: 50px;
 }
 
 /* Mapbox */
-#map {
+.natlab #map {
     width: 100%; 
     height: 600px;
     max-height: 100vh;
 }
-#map a:before {
+.natlab #map a:before {
     display: none;
 }
 
 /* Locked */
-.locked {
+.natlab .locked {
     background: #000000b0;
     height: 100%;
     width: 100%;
@@ -351,79 +332,79 @@ footer {
     padding: 1rem;
     display: none;
 }
-.locked__modal {
+.natlab .locked__modal {
     width: 480px;
     max-width: 100%;
     padding: 3rem 3.3rem 2.2rem;
     background: black;
     color: white;
 }
-.locked__modal h2 {
+.natlab .locked__modal h2 {
     margin-top: 0;
 }
-.locked__modal p {
+.natlab .locked__modal p {
     color: white;
     font-family: 'adelle';
     font-size: .95rem;
 }
 
 @media screen and (max-width: 480px) {
-    html {
+    article.natlab {
         font-size: 16px;
     }
-    .header__title {
+    .natlab .header__title {
         max-width: 90%;
     }
 }
 @media screen and (max-width: 680px) {
-    footer {
+    .natlab footer {
         text-align: center;
         padding: 3rem;
     }
-    .col--split > div {
+    .natlab .col--split > div {
         width: 100%;
     }
-    .col--expand {
-        padding: var(--my) 0;
+    .natlab .col--expand {
+        padding: var(--nat-my) 0;
     }
-    .col figure {
+    .natlab .col figure {
         margin-left: -1rem;
         margin-right: -1rem;
     }
-    .col figcaption {
+    .natlab .col figcaption {
         padding: 0 1rem;
     }
-    .story__background {
+    .natlab .story__background {
         padding: 0;
     }
-    .story__background img {
+    .natlab .story__background img {
         object-fit: cover;
     }
-    .story--contain .story__background img {
+    .natlab .story--contain .story__background img {
         object-fit: contain;
     }
-    .rightbottom-small {
+    .natlab .rightbottom-small {
         object-position: right bottom !important;
     }
 }
 @media screen and (min-width: 680px) {
-    .centertop-big {
+    .natlab .centertop-big {
         object-position: center top !important;
     }
 }
 @media screen and (max-width: 900px) {
-    .portrait__sticky {
+    .natlab .portrait__sticky {
         position: static;
         float: unset;
         padding: 0 2.5rem 2rem 16px;
     }
-    .portrait__profile {
+    .natlab .portrait__profile {
         position: relative;
         padding: 0;
         padding-left: 2rem;
-        border-left: 1px solid var(--blue);
+        border-left: 1px solid var(--nat-blue);
     }
-    .portrait__profile::before {
+    .natlab .portrait__profile::before {
         content: url(../images/down-caret.svg);
         bottom: -1px;
         left: -16px;
@@ -431,12 +412,12 @@ footer {
         width: 31px;
         height: 31px;
     }
-    .portrait__wave {
+    .natlab .portrait__wave {
         display: none;
     }
 }
 @media screen and (max-width: 1120px) {
-    .col figcaption {
+    .natlab .col figcaption {
         padding: 0 1rem;
     }
 }

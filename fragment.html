@@ -1,0 +1,833 @@
+
+  <link rel="stylesheet" href="./assets/css/app.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400&display=swap" rel="stylesheet">
+
+
+
+  <nav class="nav natlab">
+    <div class="nav__back"><a href="https://www.nationen.no/"><svg viewBox="0 0 41.2 16.2">
+          <line class="st1" x1="1.2" y1="8.1" x2="41.2" y2="8.1" />
+          <polyline class="st1" points="10.1,15.6 1.2,8.1 10.1,0.6" />
+        </svg></a></div>
+    <div class="nav__logo"><a href="https://www.nationen.no"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 400 434.6">
+          <path fill="white"
+            d="M0,0V434.6c55.3-24.6,124.6-39.3,200-39.3S344.7,410,400,434.6V0ZM329.1,105.9l-32,11.3V302.5H276l-30.9-32L121.8,146.7h-2.6V284l32.1,11.3v5.3H70.9v-5.3l32-11.3V116.3L73.1,105.9v-5.3h78l30.5,32,96.5,98.6h2.6v-114l-32-11.3v-5.3H329v5.3Z" />
+        </svg></a></div>
+  </nav>
+  <article class="natlab" id="top">
+    <header class="header">
+      <div class="header__content"><video class="intersect" autoplay loop muted playsinline=""
+          poster="./assets/images/header-placeholder.jpg">
+          <source src="./assets/video/mot-fjellet-vbr4.webm" type="video/webm">
+          <source src="./assets/video/mot-fjellet-vbr2.5.mp4" type="video/mp4">
+        </video>
+        <div class="header__title"><svg viewBox="0 0 697 160">
+            <path
+              d="M76.28,26.18l-19.45,75H51.59L17.71,11.26Q15.4,4.93,13,3.78T0,2.62V1.23H52.51V2.62q-9.39,0-13,1T35.88,7.56a9.66,9.66,0,0,0,.93,3.7L61,75.92,75,22.33l-3.28-11Q69.9,5.1,67.26,3.86T53.74,2.62V1.23h52.77V2.62q-9.36,0-13,1t-3.6,4.25a9.87,9.87,0,0,0,.61,3.39l19.87,64.82,17-48q2.6-7.56,2.6-12.35Q130,2.62,111.5,2.62V1.23h39.73V2.62q-10.93,0-16.17,11.26-.78,1.69-5.7,15.11L104.1,101.18H99Z">
+            </path>
+            <path
+              d="M180,62.19v31a10.82,10.82,0,0,0,.46,4,3.1,3.1,0,0,0,1.46.93,17.62,17.62,0,0,0,4.16.78c2,.2,3.77.31,5.31.31v1.38H150.3V99.18c3,0,5.68-.11,8.09-.31a25.41,25.41,0,0,0,6.24-1.24c.61-.52.92-2,.92-4.49V12.21c0-1.35,0-2.48-.08-3.41a3.76,3.76,0,0,0-.69-2.17,4.65,4.65,0,0,0-2-1.85Q160,4,150.46,4V2.62L180,0V54.52a31,31,0,0,1,4.46-11.86Q189,35.58,195.12,35a24,24,0,0,0,2.69-.16c1-.1,1.67-.15,2.08-.15q10.79,0,16.17,5.87a16.91,16.91,0,0,1,4.31,11.73V93.16a10.76,10.76,0,0,0,.47,4,3.21,3.21,0,0,0,1.54.93,20.75,20.75,0,0,0,4.46.77c2.16.2,4.31.31,6.47.31v1.38H193.58V99.18c1.64,0,3.54-.11,5.7-.31A22.23,22.23,0,0,0,205,97.63c.62-.52.93-2,.93-4.49V51.36q0-6.66-1.39-9.91-2.16-5.1-8.16-5.11-6.47,0-11.09,8.51A50.5,50.5,0,0,0,180,62.19Z">
+            </path>
+            <path
+              d="M267.5,98.09a3.14,3.14,0,0,1-1.39-.93,10.82,10.82,0,0,1-.46-4V34.8l-29.72,2.47v1.38q9.85,0,12.63.78a4.69,4.69,0,0,1,2,1.86c.41.52.61,1.76.61,3.73v48.1c0,2.49-.3,4-.92,4.5A25.38,25.38,0,0,1,244,98.87c-2.41.2-5.11.31-8.08.31v1.38h45V99.18Q270.73,99.18,267.5,98.09Z">
+            </path>
+            <path
+              d="M257.56,17.25a8.24,8.24,0,0,0,6.11-2.47,8.37,8.37,0,0,0,2.44-6.16,8.41,8.41,0,0,0-2.44-6.16,8.81,8.81,0,0,0-12.21,0A8.41,8.41,0,0,0,249,8.62a8.37,8.37,0,0,0,2.44,6.16A8.22,8.22,0,0,0,257.56,17.25Z">
+            </path>
+            <path
+              d="M322.47,39.58c4-3,6.11-4.57,6.32-4.78V57.9l-1.23-.3a32.15,32.15,0,0,0-7.7-15.1q-6-6.3-13.25-6.31a17.22,17.22,0,0,0-9.08,2.16q-4.78,2.92-4.78,9.7,0,5.54,5.22,8.62,3.67,2.16,14.73,4.78t15.5,6.16q6.29,4.92,6.29,15.7,0,10-6.78,14.79-5.38,3.84-13.55,3.85-6.78,0-9.7-.93-4.32-1.38-9.4-6.62-6.17,7.25-6.47,7.55V74.69h1.08A98.86,98.86,0,0,0,294,87.93,24,24,0,0,0,299,95.48a16.2,16.2,0,0,0,6.73,4.23,39.27,39.27,0,0,0,9.51.85,12.31,12.31,0,0,0,7.89-2.46,10,10,0,0,0,3.71-8.32q0-6.93-5-10.32-3.87-2.61-13.68-4.62t-15.23-6.46a17.69,17.69,0,0,1-6.49-14.33,18.86,18.86,0,0,1,5.46-13.63,17.93,17.93,0,0,1,13.33-5.62,25.33,25.33,0,0,1,10.47,2A56.38,56.38,0,0,0,322.47,39.58Z">
+            </path>
+            <path
+              d="M367.9,72.84V93.13a10.86,10.86,0,0,0,.47,4,3.18,3.18,0,0,0,1.46.93,17.29,17.29,0,0,0,4.08.78c1.95.2,3.54.31,4.77.31v1.38H339V99.18q9.24,0,12.48-1.08l1.07-.47c.62-.51.93-2,.93-4.48V10.65a7.9,7.9,0,0,0-.93-4.41,3.2,3.2,0,0,0-1.69-1.46Q348.35,4,339.11,4V2.62L367.9,0V70.07l19.41-19.43q4.62-4.5,4.62-8.08,0-3-3.24-4.58c-2.15-1.09-5.44-1.64-9.85-1.64V34.8H414.1v1.54q-5.85,0-9.16,1.71t-9,7l-9.55,9.44L406.1,93.76a8.41,8.41,0,0,0,4.23,4.41q2.54,1,8.39,1v1.38H381.15V99.18c3.39,0,6-.08,7.85-.24s2.77-.9,2.77-2.24a9.78,9.78,0,0,0-1.23-3.41L376.07,64.53Z">
+            </path>
+            <path
+              d="M450.6,115.32q-3.24,9.41-6,13.11a9.93,9.93,0,0,1-8.31,4.32c-4.31,0-7.5-.44-9.55-1.31A6.46,6.46,0,0,1,422.8,127a20.66,20.66,0,0,1-.84-5,8.14,8.14,0,0,1,7.93-7.86,7.2,7.2,0,0,1,5.21,2.24,8,8,0,0,1,2.26,5.93q0,6.61-6.23,7.39a3.86,3.86,0,0,0,2.23,1.37,16.91,16.91,0,0,0,2.39.17,8.35,8.35,0,0,0,6.77-3.18c1.75-2.11,3.59-6,5.55-11.69L453,102.41,430.73,42.06c-.92-2.37-1.49-3.76-1.69-4.17-.62-1-2.41-1.55-5.39-1.55h-3.54V34.8h35.26v1.54q-3.54,0-7.16.08c-2.41,0-3.62.7-3.62,1.93l.93,3.09,14.89,39.72,10.36-30.29a28.22,28.22,0,0,0,1.85-8.34q0-6.18-10.32-6.19V34.8H488v1.54c-3.9,0-6.93,1-9.08,2.86s-4.57,6.66-7.24,14.26Z">
+            </path>
+            <path
+              d="M544.08,44.81A30.84,30.84,0,0,1,550.55,55a35.8,35.8,0,0,1,2.3,13.24q0,14.94-10.31,24.8-9.4,8.92-21.1,8.93a30.29,30.29,0,0,1-20.33-7.86L494.34,102H490l8.78-10a30.51,30.51,0,0,1-6.47-10.32A37,37,0,0,1,490,68.22q0-14.92,10.32-24.64,9.39-8.78,21.1-8.78a29.42,29.42,0,0,1,10.47,1.93,36.27,36.27,0,0,1,9.86,5.77l6.62-7.7h4.31Zm-8.63,4.93q-1.38-7.08-4.62-10.32c-2.15-2.15-5.29-3.23-9.39-3.23q-8.31,0-11.86,7.7T506,68.22v6.62a68.14,68.14,0,0,0,.62,7.86Zm.77,4L507.43,86.86q1.38,6.78,4.69,10.24t9.32,3.46q8.31,0,11.86-7.85t3.54-24.49V64.53A78.22,78.22,0,0,0,536.22,53.75Z">
+            </path>
+            <path
+              d="M588.89,115.32q-3.23,9.41-6,13.11a10,10,0,0,1-8.32,4.32c-4.31,0-7.5-.44-9.55-1.31a6.48,6.48,0,0,1-3.93-4.47,20.66,20.66,0,0,1-.84-5,8.14,8.14,0,0,1,7.93-7.86,7.19,7.19,0,0,1,5.21,2.24,8,8,0,0,1,2.26,5.93q0,6.61-6.22,7.39a3.83,3.83,0,0,0,2.23,1.37,16.77,16.77,0,0,0,2.38.17,8.35,8.35,0,0,0,6.77-3.18q2.63-3.16,5.55-11.69l4.92-13.93L569,42.06c-.93-2.37-1.49-3.76-1.7-4.17q-.92-1.55-5.39-1.55H558.4V34.8h35.27v1.54c-2.37,0-4.75,0-7.17.08s-3.61.7-3.61,1.93l.92,3.09L598.7,81.16l10.36-30.29a27.9,27.9,0,0,0,1.85-8.34q0-6.18-10.31-6.19V34.8h25.71v1.54c-3.9,0-6.93,1-9.08,2.86s-4.57,6.66-7.24,14.26Z">
+            </path>
+            <path
+              d="M667.74,55.84v-9c0-4.13-.66-6.91-2-8.36s-4.13-2.17-8.46-2.17a20.12,20.12,0,0,0-9.29,2,10,10,0,0,0-5.23,5.5,6.62,6.62,0,0,1,1.54-.15,5.83,5.83,0,0,1,4.77,2.31A8.1,8.1,0,0,1,651,51.28a7.24,7.24,0,0,1-2.33,5.55A7.76,7.76,0,0,1,643.18,59a6.11,6.11,0,0,1-3.58-1.08c-3-1.94-4.51-4.41-4.51-7.39a16,16,0,0,1,.92-4.93q2.16-6,10.78-8.77a40,40,0,0,1,12.48-2q11.38,0,17.25,4.31,5.24,3.84,5.23,9.67v34c0,6.14.16,9.93.46,11.37q1.08,5.22,5.55,5.22c2.67,0,4.46-1.38,5.39-4.13s1.38-6.74,1.38-12c0-1.42,0-2.85-.07-4.28s-.08-2.91-.08-4.44V73.15h1.85v6.78c0,2.15,0,4.21.15,6.16q0,8.93-2.17,12-2.78,3.84-11.3,3.85-6.66,0-9.91-2.29-3.87-2.75-5.11-9.31-3.23,7.49-9.7,10.07A28.58,28.58,0,0,1,647.87,102a20.22,20.22,0,0,1-11.24-3.09Q630,94.71,630,86.22a18,18,0,0,1,6.44-14,26.68,26.68,0,0,1,15.64-6.32q9.21-.78,12.43-2.47C666.66,62.27,667.74,59.75,667.74,55.84Zm-.46,27.86V63.11a8,8,0,0,1-5.47,3q-3.62.54-7,1a11.55,11.55,0,0,0-7.08,5q-3.09,4.64-3.08,13,0,9,1.77,12.15a6,6,0,0,0,5.62,3.17q5.85,0,10.55-4.87A16.45,16.45,0,0,0,667.28,83.7Z">
+            </path>
+          </svg></div>
+      </div>
+    </header>
+    <style>
+      .natlab .header__content {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        height: 100vh
+      }
+
+      .natlab .header__content video {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center
+      }
+
+      .natlab .header__title {
+        width: 65%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        position: absolute;
+        top: 300px;
+        z-index: 100;
+        mix-blend-mode: overlay
+      }
+
+      .natlab .header__title path {
+        fill: #000;
+        animation: float 4s ease-in-out infinite
+      }
+
+      .natlab .header__title path:nth-child(2) {
+        animation-delay: -.15s
+      }
+
+      .natlab .header__title path:nth-child(3),
+      .natlab .header__title path:nth-child(4) {
+        animation-delay: -.3s
+      }
+
+      .natlab .header__title path:nth-child(5) {
+        animation-delay: -.45s
+      }
+
+      .natlab .header__title path:nth-child(6) {
+        animation-delay: -.6s
+      }
+
+      .natlab .header__title path:nth-child(7) {
+        animation-delay: -.75s
+      }
+
+      .natlab .header__title path:nth-child(8) {
+        animation-delay: -.9s
+      }
+
+      .natlab .header__title path:nth-child(9) {
+        animation-delay: -1.05s
+      }
+
+      .natlab .header__title path:nth-child(10) {
+        animation-delay: -1.2s
+      }
+
+      @media screen and (max-width:480px) {
+        .natlab .header__title {
+          width: 90%
+        }
+
+        .natlab .header__title path {
+          animation-name: float-small
+        }
+      }
+
+      @keyframes float {
+        50% {
+          -webkit-transform: translateY(20px);
+          transform: translateY(20px)
+        }
+      }
+
+      @keyframes float-small {
+        50% {
+          -webkit-transform: translateY(25px);
+          transform: translateY(25px)
+        }
+      }
+    </style>
+    <main>
+      <div class="section">
+        <div class="col">
+          <p class="leadin">Myken kunne blitt en ren sommerøy, hadde ikke Roar Larsen og familien blitt værfaste for 13
+            år siden.</p>
+          <div class="meta">
+            <div class="meta__byline">
+              <div class="meta__author">Tekst, foto og video: <a
+                  href="https://www.nationen.no/av/Siri%20Juell%20Rasmussen/">Siri Juell Rasmussen</a></div>
+              <div class="meta__author">Utvikling og design: <a
+                  href="https://www.nationen.no/av/Jarand%20Ullestad/">Jarand Ullestad</a></div>
+            </div>
+          </div>
+          <p><em>Denne saken ble publisert 28. januar 2022, men løftes nå fram for nye og gamle lesere.
+            </em></p>
+          <p>Det ligger en liten prikk på norgeskartet som er vanskelig å se uten lupe. Prikken heter Myken og ligger i
+            Rødøy kommune. En øy litt sør for Bodø som hurtigbåten bruker fem timer på å nå i vinterhalvåret.</p>
+        </div>
+        <div class="col col--expand">
+          <div id="map"></div>
+        </div>
+        <div class="col">
+          <p>Hadde ikke Roar Larsen, kona og de fire barna ved en tilfeldighet seilt innom og blitt værfaste i 2008,
+            hadde denne historien blitt en annen, og øyfolket neppe fått det så travelt om sommeren at de knapt har tid
+            til å slå av en prat.</p>
+          <div class="portrait">
+            <div class="portrait__sticky">
+              <div class="portrait__profile"><svg class="portrait__wave" viewBox="0 0 32 17">
+                  <path
+                    d="M1.2,16c0,0,2.8-0.7,11.8-10.4S26.7,4.2,27,6c0.3,1.7-0.1,2.9-1.9,3.1c-0.8,0.1-1.6-0.2-2.1-1c1.7,2.3,2.8-0.9,1.6-2.1c-1.3-1.2-4.4,0.3-4.2,2.7c0.2,2.5,4.7,7.3,10.8,7.3">
+                  </path>
+                </svg>
+                <div class="portrait__name">Roar Larsen (56)</div>
+                <div class="portrait__info">
+                  <div>Opprinnelig fra Trondheim.</div>
+                  <div>Kom til Myken for første gang i 2008. Bor på øya sammen med kona.</div>
+                  <div>Daglig leder ved Myken destilleri.</div>
+                </div>
+              </div>
+            </div><video class="portrait__video intersect" loop muted playsinline="">
+              <source src="./assets/video/roar.webm" type="video/webm">
+              <source src="./assets/video/roar.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>Da Roar ruslet rundt med familien på øya den gangen i 2008, mens de ventet på at vinden skulle roe seg,
+            falt de pladask for alt de så og alle de møtte.</p>
+          <p>Hjemme i Trondheim hadde Roar og familien hus. Han hadde to gode jobber som forsker og en liten stilling
+            som professor. Alt var på stell.</p>
+          <p>Likevel begynte han og kona å tenke på om de kunne bosette seg på den lille øya. Kunne de starte opp med
+            noe de kunne leve av? Kunne de bidra med noen arbeidsplasser kanskje?</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=300d79cc-4714-565e-b128-93a271a355df&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=400">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=300d79cc-4714-565e-b128-93a271a355df&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Roar bak rute med uvær på.">
+            <figcaption>Spriten reddet øya fra å bli folketom. Nå kommer det turister i hopetall for å se på
+              destilleriet Roar Larsen har startet.</figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <p>Så hørte de om skolen på øya. En mor med ett barn skulle flytte. Det betød nedleggelse.</p>
+          <p>– Det var utløsende. Vi hadde fire barn som kunne redde den gamle skolen, sier Roar.</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=076e48c0-c181-56b1-8216-edef805a32a2&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=600">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=076e48c0-c181-56b1-8216-edef805a32a2&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Roar står mellom hyller med tønner.">
+            <figcaption>Roar Larsen bestemte seg for å starte med whisky. Hvis skottene kunne, kunne vel han og.
+            </figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <p>De tok permisjon fra jobbene sine i ett år for å bo på øya. Da året var omme, fant de ut at det var der de
+            ville bo.</p>
+          <p>Så var det å finne ut av hva de kunne tjene penger på, der ute i havgapet.</p>
+          <p>– Vi hadde noen ideer, den villeste var trøffelplantasje. Vi tenkte på sjokoladefabrikk, et hotell, kanskje
+            et nytt fiskemottak, sier Roar.</p>
+          <p>Interessen var der og de skaffet seg kunnskap. Sammen med fem andre ektepar, som alle hadde tilknytning til
+            øya, satte de i gang.</p>
+          <p>Fiskemottaket nede på kaia ble bygd om til et destilleri.</p>
+        </div>
+        <div class="col col--full">
+          <div class="story story--contain" data-story="1">
+            <div class="story__background" data-story-id="1" data-story-state="active">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=6e1d4c05-ced4-5410-b9c5-9b9abf857fc3&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=600&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=6e1d4c05-ced4-5410-b9c5-9b9abf857fc3&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="1">
+              <div>
+                <div>Før var bygget på kaia et fiskemottak, nå blir det produsert whisky i lokalet.</div>
+              </div>
+            </div>
+            <div class="story__background" data-story-id="2">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=95612c31-784f-532e-93a9-4e7f6e1673ee&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=95612c31-784f-532e-93a9-4e7f6e1673ee&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="2">
+              <div>
+                <div>Eierne av destilleriet har bygd «katedralen». Den skal bli fylt opp med tønner av whisky til
+                  lagring. Man kan ikke kalle whisky for whisky før den har vært lagret i tre år.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <p>Da de endelig startet opp i 2014, var de verdens første arktiske wiskyprodusenter og Norges største
+            produsent. Kjærligheten til øya drev ham, og da omsetningen var der den skulle, kunne Roar i 2019 slutte i
+            jobbene sine på fastlandet.</p>
+          <p>– Lønna er halvert, men her er det ikke så mye å bruke penger på. Jeg har ikke evnen til å angre, sier han.
+          </p>
+          <p>Barna har blitt store og bor ikke lenger fast på øya.</p>
+          <figure><img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=5bed888e-3a9d-5bd8-941f-d18715a31590&amp;type=preview&amp;width=680&amp;q=50"
+              loading="lazy" alt="">
+            <figcaption>Hvis du har 28.000 kroner å avse, kan du kjøpe deg en tønne med whisky.</figcaption>
+          </figure>
+          <p>Whiskyen kom seg etter hvert inn i Vinmonopolets hyller. De edle dråpene begynte å bli så kjent at
+            omsetningen i 2020 ble på 3,5 millioner.</p>
+        </div>
+        <div class="col col--full">
+          <div class="story" data-story="2">
+            <div class="story__background" data-story-id="1" data-story-state="active"><video class="intersect" loop
+                muted playsinline="">
+                <source src="./assets/video/kjell-ove.mp4" type="video/mp4">
+              </video></div>
+            <div class="story__trigger" data-story-control="1">
+              <div class="story__text">
+                <div>Kjell Ove Vuttudal kom til Myken i fjor, og bor alene på øya. Her jobber han som spritkoker på
+                  Myken destilleri.</div>
+              </div>
+            </div>
+            <div class="story__background" data-story-id="2">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=d0b487ba-158a-56b6-80be-a09c9c620f0b&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=d0b487ba-158a-56b6-80be-a09c9c620f0b&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="Kjell-Ove og Roar i på jobb.">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="2">
+              <div>
+                <div>Kjell Ove har første dag på jobb og er under opplæring. Bak ham står Roar Larsen, som så at han
+                  hadde de beste forutsetningene for å få jobben: å passe sammen med folka på øya.</div>
+              </div>
+            </div>
+            <div class="story__background" data-story-id="3">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=24c140dc-157f-58ad-adc1-5cc8eb4765fe&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img class="rightbottom-small"
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=24c140dc-157f-58ad-adc1-5cc8eb4765fe&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="Kjell-Ove i profil med havet i bakgrunnen.">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="3">
+              <div>Han har flyttet mange ganger og synes ikke det er noe problem å komme til øya alene. – Jeg tror jeg
+                vil trives her, men jeg vet jo ikke før det har gått ett år eller to. Det ser lovende ut.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h2>Forliset forandret øya</h2>
+          <p>Etter noen år begynte turistene å komme for alvor. Den lille øya, hvor alle en gang levde av fisken i
+            havet, var på vei inn i en ny epoke: Whisky-epoken.</p>
+          <p>Det hadde neppe de første to første mannfoka som bosatte seg på øya i 1628 kunnet forestille seg. Neppe de
+            hundre som bodde der på 60- og 70-tallet heller.</p>
+          <figure><img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=2f6b0083-cb84-59a8-a73a-1e57fa118d86&amp;type=preview&amp;width=680=q=50"
+              loading="lazy" alt="">
+            <figcaption>Det henger bilder i husene som minner om at havet gir og tar.</figcaption>
+          </figure>
+          <p>Etter at sju mann, seks av de fra Myken, omkom da fiskebåten Western forliste i 1981, begynte det å gå
+            nedover med den lille øya. Fem år senere brant fiskemottaket ned. Det var begynnelsen på slutten for
+            fiskeøya. Mange spådde at det også ville bety slutten for fast bosetning på den lille øya.</p>
+          <p>Men de tok feil. Whiskyen, folkene og turistene har sørget for en ny vår.</p>
+          <div class="break"><svg viewBox="0 0 201 12">
+              <path
+                d="M0.5,10.6c10.3,0.6,13.7-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.9-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.3-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.1-9.2,25-9.2c10.9,0,14.7,9.8,25,9.2">
+              </path>
+            </svg></div>
+        </div>
+        <div class="col col--full">
+          <div class="story story--contain" data-story="3">
+            <div class="story__background" data-story-id="1" data-story-state="active">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=72fe50a6-90dc-5854-885d-9b87fb0741d9&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=72fe50a6-90dc-5854-885d-9b87fb0741d9&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="Iinis betjener kunde i kassa på butikken.">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="1"></div>
+            <div class="story__background" data-story-id="2">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=5e06eabb-04c6-5f85-bc7f-9e205317869c&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=600&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=5e06eabb-04c6-5f85-bc7f-9e205317869c&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="2"></div>
+            <div class="story__background" data-story-id="3">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=88c13e3a-30b3-5819-b6da-20a01340505c&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=88c13e3a-30b3-5819-b6da-20a01340505c&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="3"></div>
+            <div class="story__background" data-story-id="4">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=c1229114-0808-56c6-8603-b5db88f5a57b&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=600&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=c1229114-0808-56c6-8603-b5db88f5a57b&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="4"></div>
+          </div>
+        </div>
+        <div class="col">
+          <h2>Iinis trosser sjøsyken</h2>
+          <p>Myken handel ligger ikke mange meterne fra kaia. Hver dag låser Iinis Laakso (57) seg inn og holder åpent i
+            to timer.</p>
+          <div class="portrait">
+            <div class="portrait__sticky">
+              <div class="portrait__profile"><svg class="portrait__wave" viewBox="0 0 32 17">
+                  <path
+                    d="M1.2,16c0,0,2.8-0.7,11.8-10.4S26.7,4.2,27,6c0.3,1.7-0.1,2.9-1.9,3.1c-0.8,0.1-1.6-0.2-2.1-1c1.7,2.3,2.8-0.9,1.6-2.1c-1.3-1.2-4.4,0.3-4.2,2.7c0.2,2.5,4.7,7.3,10.8,7.3">
+                  </path>
+                </svg>
+                <div class="portrait__name">Iinis Laakso (57)</div>
+                <div class="portrait__info">
+                  <div>Opprinnelig fra Lillehammer.</div>
+                  <div>Kom for et år siden, og bor på øya sammen med hunden Alice.</div>
+                  <div>Driver butikken på øya.</div>
+                </div>
+              </div>
+            </div><video class="portrait__video intersect" loop muted playsinline="">
+              <source src="./assets/video/iinis.webm" type="video/webm">
+              <source src="./assets/video/iinis.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>Iinis kom til øya på ferie med en venninne, noen år senere hadde hun fått seg fast jobb i butikken. Nå er
+            hun her på andre året.</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=b0c506b4-b4ee-5e5f-9020-08682881f0c2&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=600">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=b0c506b4-b4ee-5e5f-9020-08682881f0c2&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Iinis foran bygda.">
+            <figcaption>Iinis trives best med fast grunn under beina. Hennes store stor utfordring med å bo på øya, er
+              at hun blir veldig sjøsyk.</figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <p>Iinis jobbet på Operaen i Oslo med økonomi og service i mange år. Så kom covidpandemien, dermed ble Operaen
+            stengt og muligheten til å finne på noe helt nytt dukket opp.</p>
+          <p>– Jeg kjente at dette ville jeg, selv om jeg ikke helt visste hva jeg gikk til. Dette kunne jeg vokse på,
+            jeg ville bli tryggere i meg selv.</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=bd5a16e7-ccf0-5dc5-b727-7a9eaca805f9&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=600">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=bd5a16e7-ccf0-5dc5-b727-7a9eaca805f9&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Gult hus under mørk himmel.">
+            <figcaption>Drar du til Myken i vinterhalvåret kan du ikke være sikker på at hurtigbåten greier å hente deg.
+              Normalt skal den komme hver dag, året rundt. Men i 2020 var det 40 ganger den ikke greide å legge til kai.
+            </figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <p>I 2021 var det storm. Iinis gikk sin siste tur på øya uten brodder. Hun falt og brakk skulderen. Det gikk
+            tre dager før legebåten kunne legge til kai. Legen ville ha henne med tilbake i båten til sykehuset.</p>
+          <figure class=""><img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=888964e7-762c-580b-b24b-22e80d6c60dc&amp;type=preview&amp;width=644"
+              loading="lazy" alt="Iinis går mellom husene med hunden."></figure>
+          <p>– Da ble jeg redd, jeg ville ikke i båt i det været.</p>
+          <p>– Alle hjalp meg, sånn er det her. En sydde fatle av en gammel bukse, en annen hjalp meg med hunden, en kom
+            og kledde på meg. Dermed greide jeg å jobbe videre, sier Iinis.</p>
+          <p>Etter to uker kom hun seg omsider på sykehuset.</p>
+          <div class="break"><svg viewBox="0 0 201 12">
+              <path
+                d="M0.5,10.6c10.3,0.6,13.7-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.9-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.3-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.1-9.2,25-9.2c10.9,0,14.7,9.8,25,9.2">
+              </path>
+            </svg></div>
+          <h2>Butikken er viktig</h2>
+          <p>Ute blåser det så vinduene rister i den lille butikken. Kundene kommer inn våte, forblåste og blide. I dag
+            er det tolv mennesker på øya, elleve kommer innom.</p>
+          <p>– Så sant du lever, kommer du på butikken, sier Iinis.</p>
+        </div>
+        <div class="col col--full">
+          <div class="story story--contain" data-story="4">
+            <div class="story__background" data-story-id="1" data-story-state="active">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=1c8d22f9-cf19-5c9b-945f-246e6bdbde2d&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img class="centertop-big"
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=1c8d22f9-cf19-5c9b-945f-246e6bdbde2d&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="Iinis betjener kunde i kassa på butikken.">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="1">
+              <div>
+                <div>Om sommeren er det sommerfolket som styrer tempoet i butikken. Når de drar, er det de som er igjen
+                  som trenger den mer enn ellers.</div>
+              </div>
+            </div>
+            <div class="story__background" data-story-id="2">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=b759fc42-74ce-5d94-9611-f5b7a661a56c&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=b759fc42-74ce-5d94-9611-f5b7a661a56c&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="2">
+              <div>
+                <div>Butikken er ikke bare viktig for å kunne handle mat. Det er også samlingspunktet på øya.</div>
+              </div>
+            </div>
+            <div class="story__background" data-story-id="3">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=c9d9d298-86ab-5ecf-aa0e-fd3622ad94bc&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=c9d9d298-86ab-5ecf-aa0e-fd3622ad94bc&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="3">
+              <div>
+                <div>De skravler, sjekker at alle har det bra, forteller siste nytt om været, drikker kaffe og spiser
+                  Non Stop.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <p>Jobben er mer enn å sitte i kassa. Iinis sjauer, triller varer fra kaia, henter posten, bestiller varer,
+            finner produkter turistene kan like, betaler fakturaer. Kommer du til øya uten mat etter at den er stengt,
+            kan det godt hende hun åpner for deg.</p>
+          <p>– Omsetningen har økt fra 1,9 mill. i 2019 til litt over 2,6 mill. i 2021, forteller Iinis stolt bak kassa.
+          </p>
+          <p>Det er turistene som legger igjen nok penger til at butikken kan holde åpent hele året.</p>
+          <p>Så går strømmen.</p>
+          <p>– Nå må ingen åpne fryseboksene, vi vet ikke hvor lenge den blir borte denne gangen, sier Iinis bestemt.
+          </p>
+          <p>Stearinlys blir tent, dette har de vært med på før. Alle tar det med et smil og spiser mer Non Stop.</p>
+          <p>Det varer bare noen minutter denne gangen.</p>
+          <div class="break"><svg viewBox="0 0 201 12">
+              <path
+                d="M0.5,10.6c10.3,0.6,13.7-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.9-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.3-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.1-9.2,25-9.2c10.9,0,14.7,9.8,25,9.2">
+              </path>
+            </svg></div>
+        </div>
+        <div class="col col--full">
+          <div class="story story--contain" data-story="5">
+            <div class="story__background" data-story-id="1" data-story-state="active"><video class="intersect" loop
+                muted playsinline="">
+                <source src="./assets/video/geir-og-kai.mp4" type="video/mp4">
+              </video></div>
+            <div class="story__trigger" data-story-control="1">
+              <div></div>
+            </div>
+            <div class="story__background" data-story-id="2">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=d785a91e-90da-510b-99df-5d821e5ab431&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=d785a91e-90da-510b-99df-5d821e5ab431&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="2">
+              <div>
+                <div>Da Geir Gjessing kom til Myken skulle han bare være en par dager. Han endte opp med å kjøpe et
+                  falleferdig hus i 2011 som han pusset opp. Kona passer sauene hjemme i Skjåk.</div>
+              </div>
+            </div>
+            <div class="story__trigger" data-story-control="2">
+              <div>
+                <div>– Hemmeligheten med øya er butikken, der får du vite litt av hvert.</div>
+              </div>
+            </div>
+            <div class="story__background" data-story-id="3">
+              <picture>
+                <source media="(max-aspect-ratio: 3/4)"
+                  srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=a96afcb8-ec9e-538c-9981-b736c4510619&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800&amp;q=60">
+                <img
+                  src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=a96afcb8-ec9e-538c-9981-b736c4510619&amp;type=preview&amp;width=1600&amp;q=80"
+                  loading="lazy" alt="">
+              </picture>
+            </div>
+            <div class="story__trigger" data-story-control="3">
+              <div>
+                <div>Kai Gjessing (t.h.) er pensjonist og på besøk hos broren. Han hjelper folk med stort og smått. –
+                  Det er hyggelig å gjøre noe med andre. Her tar jeg meg tid til å ha tid.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h2>– Vi er få, men det er et godt fellesskap</h2>
+          <p>Gro Bygdevoll bor i det eldste huset på øya, fra 1860.</p>
+          <p>– Det er viktig å ikke glemme at identiteten til øya er menneskene som bor her, øya er mer enn whisky, sier
+            hun.</p>
+          <div class="portrait">
+            <div class="portrait__sticky">
+              <div class="portrait__profile"><svg class="portrait__wave" viewBox="0 0 32 17">
+                  <path
+                    d="M1.2,16c0,0,2.8-0.7,11.8-10.4S26.7,4.2,27,6c0.3,1.7-0.1,2.9-1.9,3.1c-0.8,0.1-1.6-0.2-2.1-1c1.7,2.3,2.8-0.9,1.6-2.1c-1.3-1.2-4.4,0.3-4.2,2.7c0.2,2.5,4.7,7.3,10.8,7.3">
+                  </path>
+                </svg>
+                <div class="portrait__name">Gro Bygdevoll (67)</div>
+                <div class="portrait__info">
+                  <div>Bodd fast på øya siden 1975.</div>
+                  <div>Bor alene, men får ofte besøk av barna.</div>
+                  <div>Jobbet som lærer og drevet kafé i huset sitt på Myken. Kjent for å ha øyas fineste hage.</div>
+                </div>
+              </div>
+            </div><video class="portrait__video intersect" loop muted playsinline="">
+              <source src="./assets/video/gro.webm" type="video/webm">
+              <source src="./assets/video/gro.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>Da hun var blakk student på fastlandet kom en kjekk kar bort til bordet og spurte om hun ville ha noe å
+            drikke. Nei takk, svarte Gro. Noe å spise da? Ja takk, jeg vil gjerne ha biff.</p>
+          <p>Han reiv i, og hun falt pladask for mannen som bodde på Myken. Slik var det hun kom til øya i 1975. De ble
+            skilt i 2003, men Gro ble værende. Øya hadde tatt plass i sjelen hennes.</p>
+          <figure class=""><img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=61673eac-9b4a-5d30-8522-4083ad8352ad&amp;type=preview&amp;width=644"
+              loading="lazy" alt="Gro sitter på kjøkkenet."></figure>
+          <p>Gro har bare vært redd på øya én gang.</p>
+          <p>– Det blåste som om demoner dundret på veggen, aldri har jeg opplevd sånne kast.</p>
+          <p>– Jeg lå i sengen i andre etasje og greide ikke å bevege meg. Jeg var stiv av skrekk. Er det slik jeg skal
+            dø? tenkte jeg.</p>
+          <p>Hun overlevde og dro sliten på jobb dagen etter.</p>
+          <p>Først da hun kom hjem så hun båten på 700 kilo ligge opp ned 15 meter unna der den lå før stormen. Vinden
+            hadde flyttet den.</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=3e8e8030-209c-5f78-8dcb-c2f9f26b6846&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=400">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=3e8e8030-209c-5f78-8dcb-c2f9f26b6846&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Båtvrak foran hus.">
+          </picture>
+        </figure>
+        <div class="col">
+          <p>– Jeg syntes egentlig den havnet på rett plass, så jeg har latt den ligge.</p>
+          <p>For seks år siden merket hun at noe var feil, kroppen fungerte ikke som den pleide. Rivjernet måtte hvile,
+            ble kvalm og svimmel.</p>
+          <p>– Jeg hadde aldri trodd jeg skulle få parkinson. Kanskje få kreft som så mange får, men ikke parkinson.</p>
+          <p>Gro fikk ting til å skje på øya og synes det er sårt å ikke kunne bidra så mye mer.</p>
+          <p>– Det er godt å vite at andre har tatt på seg ansvaret. For å bo her må man være samfunnsengasjert, det er
+            nesten en plikt, sier Gro.</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=1ed38250-1a35-5a01-856b-dcd66dfb0c31&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=600">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=1ed38250-1a35-5a01-856b-dcd66dfb0c31&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Gro rusler bortover smal og våt vei.">
+            <figcaption>Så sant helsa er god, går Gro Bygdevoll de rundt 300 meterne bort til butikken.</figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <p>Hun gruer seg til å flytte fra øya, men hun gleder seg til å bo nærmere de fire døtrene og barnebarna.</p>
+          <p>Det er tid for å gå bort til butikken. Vinden tar fatt i den tynne kroppen og blåser henne hjelpsomt langs
+            veien.</p>
+          <div class="break"><svg viewBox="0 0 201 12">
+              <path
+                d="M0.5,10.6c10.3,0.6,13.7-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.9-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.3-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.1-9.2,25-9.2c10.9,0,14.7,9.8,25,9.2">
+              </path>
+            </svg></div>
+          <h2>Det mest eksotiske hun har opplevd</h2>
+          <p>Hunden Winson rekker Julie Luneborg (38) nesten til hofta og er på tur med eieren sin.</p>
+          <p>Verden var stor og Julie tok for seg. Reisedøgnene ble mange i land som India, Iran, Mongolia og mange
+            flere.</p>
+          <p>Så kom korona, dermed la hun ut på sin første norgesferie, noensinne.</p>
+          <div class="portrait">
+            <div class="portrait__sticky">
+              <div class="portrait__profile"><svg class="portrait__wave" viewBox="0 0 32 17">
+                  <path
+                    d="M1.2,16c0,0,2.8-0.7,11.8-10.4S26.7,4.2,27,6c0.3,1.7-0.1,2.9-1.9,3.1c-0.8,0.1-1.6-0.2-2.1-1c1.7,2.3,2.8-0.9,1.6-2.1c-1.3-1.2-4.4,0.3-4.2,2.7c0.2,2.5,4.7,7.3,10.8,7.3">
+                  </path>
+                </svg>
+                <div class="portrait__name">Julie Luneborg (38)</div>
+                <div class="portrait__info">
+                  <div>Opprinnelig fra Oslo.</div>
+                  <div>Leier hus på øya for tredje år på rad, men kunne gjerne bo fast, om hun fikk kjøpt seg et hus
+                    der.</div>
+                  <div>Bor sammen med hunden Winston på snart ett år.</div>
+                  <div>Jobber på hjemmekontor for reisemagasinet Vagabond.</div>
+                  <div>Trives best når turistene har reist.</div>
+                </div>
+              </div>
+            </div><video class="portrait__video intersect" loop muted playsinline="">
+              <source src="./assets/video/julie.webm" type="video/webm">
+              <source src="./assets/video/julie.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>Julie kom til Myken første gang på sommeren, som så mange andre. Havet var stille og midnattssolen
+            imponerte. Her var det fint, tenkte hun.</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=6da18759-8cf7-5978-b8fa-26c53c8d1889&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=600">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=6da18759-8cf7-5978-b8fa-26c53c8d1889&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Julie ved havet foran naust.">
+            <figcaption>– Å komme til Myken var det mest eksotiske jeg noen gang hadde opplevd.</figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <p>Tilbake i leiligheten i Oslo skjønte Julie at det var utenkelig å ikke skulle dra tilbake. Hun så det var
+            et hus til leie på Myken. Den nye jobben som markedssjef kunne hun fint gjøre fra øya med godt internett.
+          </p>
+          <p>Dermed pakket hun det man trenger for å overvintre og jobbe på en øy langt ut i havgapet.</p>
+          <figure class="">
+            <picture>
+              <source media="(max-aspect-ratio: 3/4)"
+                srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=42dd72b2-0aa5-59e0-b2d9-83d49014048f&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=800">
+              <img
+                src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=42dd72b2-0aa5-59e0-b2d9-83d49014048f&amp;type=preview&amp;width=644"
+                loading="lazy" alt="Julie på kjøkkenet med hunden.">
+              <figcaption>Julie leier hus på Myken. Hadde det vært et til salgs hadde hun kjøpt det og flyttet for godt.
+              </figcaption>
+            </picture>
+          </figure>
+          <p>– Bare det å ta båten ut hit var eksotisk i seg selv. Lenge ser du ingen ting og lurer på hvordan i huleste
+            båten skal greie å treffe den lille øya.</p>
+          <p>Nå er hun her for tredje vinter på rad. Det er når turistene drar hun liker seg best på øya.</p>
+          <p>– Den første høsten var intens. Jeg kjente jo ingen her og følte at jeg trengte meg litt på. På butikken
+            satt de faste folkene. Så kommer jeg. Det hadde de ikke bedt om. Men folk er fine her og åpner opp.</p>
+          <h2>Alt er ikke idyll, selv på Myken</h2>
+          <p>– Jeg forsto kjapt hvorfor det er krig på jorden. Er det mulig å krangle om så tilsynelatende små ting, for
+            det gjør faktisk folk her. Akkurat det samme gjør mennesker i byer. Men de kommer godt fram her, i byer kan
+            du distansere deg.</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=d91e197c-6329-5b13-a148-0cfbbedb48ec&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=400">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=d91e197c-6329-5b13-a148-0cfbbedb48ec&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Gammelt rødt hus ved horisonten.">
+            <figcaption>Det er bare noen få hus igjen på øya som ikke er pusset opp. De har sin sjarm de òg.
+            </figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <p>Hun skjønner det kan være vanskelig når ting forandrer seg på en liten øy.</p>
+          <p>– Plutselig kommer det en gjeng som gjorde om på Myken, de bestemte seg for å satse på whisky. Folkene her
+            åpner opp for det. Kanskje de har sett så mange forandringer at de har lært seg å leve med det. Det kan ikke
+            ha vært kjempeenkelt å akseptere det heller, tenker jeg.</p>
+          <div class="break"><svg viewBox="0 0 201 12">
+              <path
+                d="M0.5,10.6c10.3,0.6,13.7-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.9-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.3-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.1-9.2,25-9.2c10.9,0,14.7,9.8,25,9.2">
+              </path>
+            </svg></div>
+          <h2>– Noen synes øya er en stein i havet</h2>
+          <p>– Akkurat her var det nabokjerringa hjalp moren min med å få meg ut for 68 år siden, sier Hårek Hansen.</p>
+          <p>Han sitter i et av de to husene han eier på øya. Dette leier han ut, det andre bruker han selv.</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=964a4994-ebf9-558d-b9af-9eac517d7292&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=400">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=964a4994-ebf9-558d-b9af-9eac517d7292&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Hårek sitter i sofa.">
+            <figcaption>Hårek Hansen er den eneste igjen på øya som ble født der.</figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <p>Da han var 15 år dro han fra øya for å studere og flyttet aldri permanent tilbake. Han bor på øya i lange
+            perioder, jobben i Skatteetaten kan kombineres med å være på øya.</p>
+          <p>– Jeg er litt overrasket over hvor begeistret folk er for stedet. Noen som har bodd her før synes dette er
+            en stein i havet. De fleste som har feriehus kommer fra hele landet. De har vært flinke til å sette dem i
+            god stand.</p>
+          <figure class=""><img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=c3d9440b-7058-5ea2-a568-a2523c44bd90&amp;type=preview&amp;width=644"
+              loading="lazy" alt="Hårek står ved minnesmerket ute.">
+            <figcaption>Hårek Hansen står ved minnesmerket over de sju som mistet livet da fiskebåten Western forliste i
+              1981.</figcaption>
+          </figure>
+          <p>– Det er ikke tvil om at whisky-destilleriet har gjort at turistene kommer. De er kjempeflinke og har gjort
+            øya mer kjent, sier Hårek.</p>
+          <h2>«Værfastfest»</h2>
+          <p>Drar du til Myken i november kan havet være røft og en utfordring for den sjøsyke. For 50 år siden brukte
+            lokalbåten 42 timer fra Bodø til øya. I dag tar det bare fem timer om vinteren.</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=f6ee6f6a-f09b-5a5b-b87a-d34d35d49044&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=400">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=f6ee6f6a-f09b-5a5b-b87a-d34d35d49044&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Myken havn en uværsdag">
+            <figcaption>Myken havn.</figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <p>Vet Roar Larsen du kommer, kan du være heldig å få noen oppmuntrende tekstmeldinger på ferden: «Hold ut» og
+            «siste etappe nå».</p>
+          <p>Blir du værfast kan det hende du blir invitert på «værfastfest».</p>
+        </div>
+        <figure class="col col--l">
+          <picture>
+            <source media="(max-aspect-ratio: 3/4)"
+              srcset="https://imengine.editorial.prod.tun.infomaker.io/?uuid=399e9e3c-646b-5834-863f-4d6829dc8415&amp;type=preview&amp;function=thumbnail&amp;width=600&amp;height=400">
+            <img
+              src="https://imengine.editorial.prod.tun.infomaker.io/?uuid=399e9e3c-646b-5834-863f-4d6829dc8415&amp;type=preview&amp;width=1080"
+              loading="lazy" alt="Øyboerne vinker farvel på havna.">
+            <figcaption>Når fergen kan legge til kai, kommer det gjerne øyfolk og vinker deg av gårde.</figcaption>
+          </picture>
+        </figure>
+        <div class="col">
+          <div class="break"><svg viewBox="0 0 201 12">
+              <path
+                d="M0.5,10.6c10.3,0.6,13.7-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.9-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.3-9.2,25-9.2s14.7,9.8,25,9.2c10.3,0.6,14.1-9.2,25-9.2c10.9,0,14.7,9.8,25,9.2">
+              </path>
+            </svg></div>
+          <div class="meta">
+            <div class="meta__pub">
+              <div>Publisert 28. januar 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="col col--l col--split">
+        <div class="footer__logo"><a href="https://nationen.no" class="nodec"><img
+              src="./assets/images/nationen-full-hvit.svg" loading="lazy"></a></div>
+        <div class="footer__meta">
+          <div>Ansvarlig redaktør<br><a href="mailto:irene.halvorsen@nationen.no">Irene Halvorsen</a></div>
+          <div>Nyhetsredaktør<br><a href="mailto:svein.hansli@nationen.no">Svein Ove Hansli</a></div>
+          <div><a href="https://www.tunmedia.no/kontakt">Kontakt redaksjonen</a></div>
+          <div>Nationen arbeider etter <a href="http://presse.no/Etisk-regelverk/Vaer-Varsom-plakaten/">Vær
+              varsom-plakatens regler</a> for god presseskikk.</div>
+          <div><img style="margin-right:1rem" src="./assets/images/pfu-rund-hvit.png" loading="lazy"> <img
+              src="./assets/images/nored-segl.svg" loading="lazy"></div>
+        </div>
+      </div>
+      <div class="col" style="text-align:center"><a href="#top">Rull opp til toppen</a></div>
+    </footer>
+  </article>
+ 
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+
