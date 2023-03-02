@@ -1,3 +1,4 @@
+setTimeout(() => {console.log("delayed 250ms")}, 250);
 /* Mapbox init */
 const natlabStart = [12.477378845214844, 66.76016258859444];
 mapboxgl.accessToken = 'pk.eyJ1IjoiamFyYW5kIiwiYSI6ImNrZnBhMDBuMjBzajEycm9laGFzenN2MjcifQ.5QyfTBxmSzxDGAyZ_kTusA';
