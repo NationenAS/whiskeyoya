@@ -94,6 +94,7 @@
 }
 .natlab .col--full {
     width: 100%;
+    max-width: 100%;
     padding: 1px 0;
 }
 .natlab .col--split {
@@ -255,7 +256,7 @@ article.natlab img {
     padding: 0 2rem;
     width: 300px;
     font-family: var(--nat-font-ter);
-    margin-right: -120px;
+    margin-right: -140px;
 }
 .natlab .portrait__wave {
     width: 32px;
