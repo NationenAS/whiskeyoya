@@ -85,10 +85,11 @@
     margin: var(--nat-my) auto;
     padding: 1px 1rem;
     width: var(--nat-col);
-    max-width: 100%;
+    max-width: calc(100% - 2rem);
 }
 .natlab .col--l {
     width: var(--nat-col-l);
+    max-width: 100%;
     padding: 1px 0;
 }
 .natlab .col--full {
@@ -119,7 +120,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: calc(100vh - 2rem);
     opacity: 0;
     padding: 1rem;
     margin-top: -100vh;
@@ -253,7 +254,6 @@ article.natlab img {
 .natlab .portrait__profile {
     padding: 0 2rem;
     width: 300px;
-    background: white;
     font-family: var(--nat-font-ter);
     margin-right: -120px;
 }
@@ -280,6 +280,7 @@ article.natlab img {
 }
 .natlab .portrait__video {
     width: 440px;
+    max-width: 100%;
 }
 
 /* Footer */
@@ -377,6 +378,7 @@ article.natlab img {
     }
     .natlab .story__background {
         padding: 0;
+        height: 100vh;
     }
     .natlab .story__background img {
         object-fit: cover;
