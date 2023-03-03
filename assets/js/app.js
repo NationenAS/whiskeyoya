@@ -1,47 +1,64 @@
-setTimeout(() => {console.log("delayed 550ms ")}, 550);
-/* Mapbox init */
-const natlabStart = [12.477378845214844, 66.76016258859444];
-mapboxgl.accessToken = 'pk.eyJ1IjoiamFyYW5kIiwiYSI6ImNrZnBhMDBuMjBzajEycm9laGFzenN2MjcifQ.5QyfTBxmSzxDGAyZ_kTusA';
-const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/jarand/ckybjbmcg0t8q14mjjvipvoj8',
-    center: natlabStart,          
-    zoom: 3,
-    interactive: false
-});
+function retry(testFunction, callbackFunction, retries = 0) {
+    if ( testFunction in window ) callbackFunction()
+    else {
+        retries++
+        let timeout = Math.pow(2, (retries + 1))
+        console.log("retrying in ", timeout, "ms")
+        setTimeout(() => {
+            retry(testFunction, callbackFunction, retries)
+        }, timeout)
+    }
+}
 
-/* Zoom in on viewport intersection */
-let natlabm = document.querySelector('#map');
-let natlabMapObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            map.easeTo({
-                zoom: 14.3,
-                duration: 8000,
-                pitch: 45,
-                bearing: 50,
-                easing(t) {
-                    return -(Math.cos(3.14 * t) - 1) / 2;
-                }
-            })
-        }
-        else {
-            map.stop();
-            map.easeTo({
-                zoom: 4,
-                duration: 2000,
-                pitch: 0,
-                bearing:0,
-                easing(t) {
-                    return Math.sin((t * 3.14) / 2);
-                }
-            });
-        }
+retry("mapboxgl", mapInit)
+
+
+
+/* Mapbox init */
+function mapInit() {
+    const natlabStart = [12.477378845214844, 66.76016258859444]
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamFyYW5kIiwiYSI6ImNrZnBhMDBuMjBzajEycm9laGFzenN2MjcifQ.5QyfTBxmSzxDGAyZ_kTusA'
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/jarand/ckybjbmcg0t8q14mjjvipvoj8',
+        center: natlabStart,          
+        zoom: 3,
+        interactive: false
+    })
+
+    /* Zoom in on viewport intersection */
+    let natlabm = document.querySelector('#map');
+    let natlabMapObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                map.easeTo({
+                    zoom: 14.3,
+                    duration: 8000,
+                    pitch: 45,
+                    bearing: 50,
+                    easing(t) {
+                        return -(Math.cos(3.14 * t) - 1) / 2;
+                    }
+                })
+            }
+            else {
+                map.stop();
+                map.easeTo({
+                    zoom: 4,
+                    duration: 2000,
+                    pitch: 0,
+                    bearing:0,
+                    easing(t) {
+                        return Math.sin((t * 3.14) / 2);
+                    }
+                });
+            }
+        });
+        }, { 
+        threshold: 0.8
     });
-    }, { 
-    threshold: 0.8
-});
-natlabMapObserver.observe(natlabm);
+    natlabMapObserver.observe(natlabm);
+}
 
 /* Videos start/stop */
 let natlabvideos = document.querySelectorAll('video.intersect');
