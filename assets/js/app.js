@@ -3,7 +3,7 @@ function retry(testFunction, callbackFunction, retries = 0) {
     else {
         retries++
         let timeout = Math.pow(2, (retries + 1))
-        console.log("retrying in ", timeout, "ms")
+        console.log("Retry:", timeout, "ms")
         setTimeout(() => {
             retry(testFunction, callbackFunction, retries)
         }, timeout)
